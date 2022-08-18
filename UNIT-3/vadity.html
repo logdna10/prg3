@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        document.getElementById('foo').validity.rangeUnderflow; //false
+    document.getElementById('bar').validity.rangeUnderflow; 
+    </script>
+</head>   
+<body> 
+    <input id="foo" type="number" min="2" value="3" />
+    <input id="bar" type="number" min="2" value="1" />
+
+</body>
+</html>

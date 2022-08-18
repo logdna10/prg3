@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script> 
+function a(name, minlength, maxlength)
+{
+if(name.value.length < minlength || name.value.length > maxlength)
+{ 
+alert("Name should be " + minlength + " to " + maxlength + " characters.");
+return false;
+}
+else
+{
+alert("Name entered: " + name.value);
+return true;
+}
+}    
+
+</script> 
+</head>
+<body>
+<div class="mail">
+<h2>JavaScript String Length Validation</h2>
+<form> 
+Name: <input type='text' id='name'/></br></br>
+<input type="button" name="submit" value="Submit" 
+onclick="a(document.getElementById('name'), 8, 10)"/>
+</form>
+</div>
+</body>
+</html>
